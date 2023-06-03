@@ -1,3 +1,22 @@
-texto 1 sin cmabiar
-cambio de texto en branch NEWTEXTS
-AÑADIENDO NUEVO TEXTO 
+---------------------------------------------------------------
+git init <-- en el directorio para iniciar el proyecto
+git status <-- para ver qué elementos dentro del directorio están en el área de ensayo 	(staging area EA). Aquí están los archivos para hacer luego commit
+git add <-- para agregarlos al staging area.
+git rm --cached -r . <-- para remover todos los archivos que están en el EA.
+git commit -m "commit message"  <-- para tenerlos listos
+
+git log <-- permite ver el trabajo hecho
+
+git diff file-name <-- para comparar el archivo y sus cambios.
+git checkout <-- para eliminar el último cambio y volver a la última versión guardada
+
+Si modifico el archivo original que está en mi carpeta de trabajo y quiero volver a
+la última versión que hice (el último commit), puedo usar el comando git checkout.
+Pero antes, si quiero comparar el cambio nuevo con el archivo original(el que está en mi repositorio local), puedo usar el comando git diff
+
+Para unirlo con Github, después de crear el repositorio (New repository)
+escribimos los siguientes comandos
+
+git remote add origin url
+git branch -M main
+git push -u origin main
